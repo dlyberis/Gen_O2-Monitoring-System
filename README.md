@@ -29,9 +29,11 @@ Telegraf is a plugin-driven server agent for collecting and sending metrics and 
 ### Install Telegraf OPC UA plugin
 1. Go to  `cd .\Program Files\InfluxData\influxdb\telegraf`.
 2. Create a new file and named it as `telegraf.conf`.
-3. Open file `telegraf.conf` with an editor and set all the configuration for OPC UA Server through https://github.com/influxdata/telegraf/blob/release-1.19/plugins/inputs/opcua/README.md instructions.
+3. Open file `telegraf.conf` with an editor and set all the configuration for OPC UA Server through 
+   https://github.com/influxdata/telegraf/blob/release-1.19/plugins/inputs/opcua/README.md instructions.
 4. Save file.
-5. In order to run Telegraf Service launch Powershell with administrator privileges, and go to directory `cd .\Program Files\InfluxData\influxdb\telegraf`. 
+5. In order to run Telegraf Service launch Powershell with administrator privileges, and go to directory 
+   `cd .\Program Files\InfluxData\influxdb\telegraf`. 
 6. Start service with `.\telegraf --config telegraf.conf`.
 
 
