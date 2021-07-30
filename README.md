@@ -1,3 +1,5 @@
+# Setup for Windows
+
 ## Install InfluxDB
 
 1. Download influxdb2-2.0.7-windows-amd64.zip
