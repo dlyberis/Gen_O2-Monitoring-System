@@ -11,10 +11,10 @@
 1. Launch Powershell with administrator privileges.
 2. Move to the directory where InfluxDB is installed.
    ```sh 
-   cd '.\Program Files\InfluxData\influxdb\'  ``` 
+   cd '.\Program Files\InfluxData\influxdb\'
 3. Run influxdb service
    ```sh
-   ./influxd   ``` 
+   ./influxd
 4. Open your browser and go to the following address http://localhost:8086/signin .
 
 ## Install Telegraf 
@@ -37,6 +37,9 @@ Telegraf is a plugin-driven server agent for collecting and sending metrics and 
 5. In order to run Telegraf Service launch Powershell with administrator privileges, and go to directory 
    `cd .\Program Files\InfluxData\influxdb\telegraf`. 
 6. Start service with `.\telegraf --config telegraf.conf`.
+
+#### Problem using Telegraf OPCUA plugin with Kepserver
+
 
 
 ## Install Grafana
