@@ -53,3 +53,20 @@ Telegraf is a plugin-driven server agent for collecting and sending metrics and 
 1. Launch Powershell with administrator privileges. 
 2. Go to  `cd .\Program Files\Grafana\bin`. 
 3. Start service with `.\grafana-server.exe`.
+
+
+# Raspberry 
+In order to automatic start grafana at every boot of raspberry pi follow the following steps
+
+Open your terminal and type the following:
+```sh
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+```
+This will open a new text file which will be executed when the desktop environment (LXDE) launches. In the file type the following:
+```sh
+@xset s off
+@xset -dpms
+@xset s noblank
+@chromium-browser --start-fullscreen http://localhost:3000/playlists/play/1?kiosk=tv&autofitpanels&refresh=5s
+```
+Can only use alt-F4 or ctrl w to quit browser 
